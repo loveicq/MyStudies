@@ -98,6 +98,11 @@ git ls-remote gitee
 ⚠️ 注意：对 GitHub 仓库重复相同操作（先 pull --allow-unrelated-histories 再 push）。
 
 执行后你的本地提交和远程初始提交将合并，之后可正常双向同步。
+☯如果vscode中源代码管理界面只能推送一个仓库,则修改.git文件夹下的config文件,在可以推送的仓库下面增加另一个仓库地址即可同时推送到两个仓库了.good!
+[remote "gitee"]
+	url = https://gitee.com/lanxuelin/mystudies.git
+	fetch = +refs/heads/*:refs/remotes/gitee/*
+	url = https://github.com/loveicq/MyStudies.git
 */
 ```
 # 二、详细配置
