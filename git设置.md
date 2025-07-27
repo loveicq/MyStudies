@@ -7,6 +7,12 @@ git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
 //查询设置情况
 git config -- global --list
+//重新初始化 Git 仓库
+git init
+//关联新仓库 URL.注意:origin是仓库别名,最好改为gitee或github,方便区分
+git remote add origin <你的新仓库URL>
+
+
 ```
 # 二、详细配置
 ## (一)忽略不必要的文件夹
